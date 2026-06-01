@@ -1,0 +1,15 @@
+@theme {
+  --color-green-50:  #0a0a0a;
+  --color-green-100: #111111;
+  --color-green-200: #111111;
+  --color-green-300: #0f0f0f;
+
+  /* keep a faint “tint” range for callouts / borders */
+  --color-green-400: #1a1a1a;
+  --color-green-500: #000000;
+  --color-green-600: #000000;
+  --color-green-700: #000000;
+  --color-green-800: #000000;
+  --color-green-900: #000000;
+  --color-green-950: #000000;
+}
