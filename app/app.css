@@ -83,6 +83,25 @@ font-variant-numeric: oldstyle-nums proportional-nums;
 }
 
 /* ===========================
+TEXT-BOX-TRIM (Progressive Enhancement)
+Kills invisible space above/below text for mathematically true margins
+=========================== */
+@supports (text-box-trim: both) or (-webkit-text-box-trim: both) {
+  .type-display,
+  .type-h1,
+  .type-h2,
+  .type-h3,
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    text-box-trim: both;
+    text-box-edge: cap;
+    -webkit-text-box-trim: both;
+    -webkit-text-box-edge: cap;
+  }
+}
+
+/* ===========================
 TYPE ROLES (SYSTEM LAYER)
 Grid-snapped via padding-bottom compensation.
 Math: (Font-Size * Line-Height) rounded up to nearest 0.5rem.
@@ -149,7 +168,8 @@ max-width: var(--measure-caption);
 text-wrap: pretty;
 padding-bottom: 0.275rem;
 margin-bottom: calc(var(--space-unit) * 1 - 0.275rem);
-color: var(--color-text-muted);
+/* Opaque Colors (color-mix) - Text never accidentally becomes see-through */
+color: color-mix(in srgb, var(--color-text-muted) 80%, #ffffff);
 }
 
 .type-label {
@@ -192,6 +212,7 @@ hyphens: auto;
 hyphenate-limit-chars: 6 3 3;
 hyphenate-limit-lines: 2;
 overflow-wrap: anywhere;
+text-wrap: pretty;
 }
 
 .prose p + p {
