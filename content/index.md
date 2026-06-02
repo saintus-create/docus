@@ -1,108 +1,33 @@
 ---
-seo:
-  title: Documentation
-  description: Clear, structured documentation.
+
+title: Research Studies
+nav\_title: Home
+description: Complete 300+ entry dataset (2004–2026, 33 countries) of peer-reviewed ADHD medication research.
+
+related:
+title: Getting Started
+description: Navigate through the research study sections.
+links:
+
+- docs/international
+- docs/ldx-trials
+
 ---
 
-::u-page-hero
-#title
-Write clear documentation with Markdown
+> **Full Dataset**
+  300+ entries across 33 countries from 2004–2026. All international studies, lisdexamfetamine trials, guidelines, and pharmacovigilance facts have been deduplicated and categorized.
 
-#description
-A simple, structured way to build and maintain content.
+- [International Studies](/docs/international) - 150+ non-U.S. studies spanning 32 countries — from Argentina to the UAE.
 
-#links
-  :::u-button
-  ---
-  color: neutral
-  size: xl
-  to: /getting-started
-  trailing-icon: i-lucide-arrow-right
-  ---
-  Get started
-  :::
+- [Lisdexamfetamine Clinical Trials](/docs/ldx-trials) - U.S.-based lisdexamfetamine clinical trials including pharmacokinetic studies and meta-analyses.
 
-  :::u-button
-  ---
-  color: neutral
-  icon: i-lucide-github
-  size: xl
-  to: https://github.com
-  variant: outline
-  ---
-  View on GitHub
-  :::
-::
-::
+- [Clinical Guidelines](/docs/guidelines) - 40+ guidelines and pharmacovigilance facts from WHO, NICE, CADDRA, and more.
 
-::u-page-section
-#title
-Features
+## Research Summary
 
-#features
-  :::u-page-feature
-  ---
-  icon: i-lucide-file-text
-  ---
-  #title
-  Markdown-based content
-  
-  #description
-  Write pages using Markdown with structured components and clean formatting.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-layout
-  ---
-  #title
-  Component support
-  
-  #description
-  Extend content using reusable UI components where needed.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-folder
-  ---
-  #title
-  Organized structure
-  
-  #description
-  Keep content modular, searchable, and easy to navigate.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-settings
-  ---
-  #title
-  Configurable design
-  
-  #description
-  Adjust layout and behavior through configuration instead of code changes.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-edit
-  ---
-  #title
-  Editable content
-  
-  #description
-  Update documentation without complex tooling or build steps.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-search
-  ---
-  #title
-  Search and navigation
-  
-  #description
-  Automatically structured navigation with full-text search support.
-  :::
-::
+| Category                         | Count    | Scope            |
+| -------------------------------- | -------- | ---------------- |
+| International Studies (Non-U.S.) | 150+     | 32 countries     |
+| Lisdexamfetamine Clinical Trials | 60+      | U.S. data        |
+| Clinical Guidelines & Facts      | 40+      | Global standards |
+| **Total**                        | **300+** | **2004–2026**    |
