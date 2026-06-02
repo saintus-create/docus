@@ -1,0 +1,115 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+html {
+  scrollbar-gutter: stable;
+  font-size: 16px;
+}
+
+main, aside {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-fd-background: #ffffff;
+  --color-fd-foreground: #1a1a1a;
+  --color-fd-muted: #f0f0f0;
+  --color-fd-muted-foreground: #5a5a5a;
+  --color-fd-popover: #ffffff;
+  --color-fd-popover-foreground: #1a1a1a;
+  --color-fd-card: #ffffff;
+  --color-fd-card-foreground: #1a1a1a;
+  --color-fd-border: #e5e7eb;
+  --color-fd-input: #dfe1e6;
+  --color-fd-primary: #005ea2;
+  --color-fd-primary-foreground: #ffffff;
+  --color-fd-secondary: #1a4480;
+  --color-fd-secondary-foreground: #ffffff;
+  --color-fd-accent: #005ea2;
+  --color-fd-accent-foreground: #ffffff;
+  --color-fd-destructive: #d8433f;
+  --color-fd-destructive-foreground: #ffffff;
+  --color-fd-ring: #005ea2;
+  --font-sans: 'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
+}
+
+/* Selective blue border only for callouts */
+[data-callout] {
+  border-left: 4px solid #005ea2 !important;
+}
+
+.dark {
+  --color-fd-background: #1a1a1a;
+  --color-fd-foreground: #f0f0f0;
+  --color-fd-muted: #2d2d2d;
+  --color-fd-muted-foreground: #a0a0a0;
+  --color-fd-popover: #2d2d2d;
+  --color-fd-popover-foreground: #f0f0f0;
+  --color-fd-card: #2d2d2d;
+  --color-fd-card-foreground: #f0f0f0;
+  --color-fd-border: #374151;
+  --color-fd-input: #404040;
+  --color-fd-primary: #4a9eff;
+  --color-fd-primary-foreground: #1a1a1a;
+  --color-fd-secondary: #73b3e7;
+  --color-fd-secondary-foreground: #1a1a1a;
+  --color-fd-accent: #4a9eff;
+  --color-fd-accent-foreground: #1a1a1a;
+  --color-fd-destructive: #f87171;
+  --color-fd-destructive-foreground: #1a1a1a;
+}
+
+.dark [data-callout] {
+  border-left: 4px solid #4a9eff !important;
+}
+
+/* Standard 8pt grid spacing */
+:root {
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
+
+/* Card spacing */
+.fd-card {
+  padding: var(--spacing-md);
+}
+
+/* Section spacing */
+section {
+  margin-bottom: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+/* Heading spacing */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* List spacing */
+ul, ol {
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-lg);
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Element spacing */
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
+  gap: var(--spacing-md);
+}
